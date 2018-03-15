@@ -1,0 +1,23 @@
+<table class = "table">
+<thead>
+<tr>
+<th>Picture</th>
+<th>Name</th>
+<th>Email</th>
+<th>City</th>
+<th>Company</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor = "let user of userList">
+<td><img [src]="user.profilePic"></td>  
+<td>{{user.firstName}}  {{user.lastName}}</td>
+<td>{{user.email}}  </td>
+<td>{{user.address.city}}  </td>
+<td>{{user.company.name}}  </td>
+</tr>
+</tbody>
+
+
+
+</table>
